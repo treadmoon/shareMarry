@@ -3,14 +3,14 @@
 </template>
 
 <script>
-// import { getTicket } from "@/server/index";
-import { getQm } from "@/server/index";
+import { getTicket } from "@/server/index";
 
 export default {
   name: "home",
   created() {
-    // getTicket();
-    getQm()
+    console.log('this==>', this.$wx);
+    
+    getTicket();
   }
 };
 </script>

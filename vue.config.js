@@ -8,15 +8,9 @@ module.exports = {
     },
     proxy:
     {
-      // '/cgi-bin': {
-      //   target: 'https://api.weixin.qq.com/',
-      //   secure: false,
-      //   changeOrigin: true
-      // },
-      '/api': {
-        target: 'http://127.0.0.1/',
-        changeOrigin: true,
-        pathRewrite: { '^/api': '' }
+      '/': {
+        target: 'http://192.168.0.101:4396/',
+        changeOrigin: true
       }
     }
 
