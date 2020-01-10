@@ -1,8 +1,5 @@
 import axios from 'axios'
 
-export function getTicket() {
-    axios.get('/code').then(res=>{
-        console.log('res:',res);
-        
-    })
+export async function getTicket(param) {
+    return await axios.post('http://111.230.241.251:4396/code',param)
 }

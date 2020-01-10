@@ -1,16 +1,14 @@
 <template>
-  <div class="home"></div>
+  <div class="home">
+    <!-- <button @click="share">BTN</button> -->
+  </div>
 </template>
 
 <script>
-import { getTicket } from "@/server/index";
+// import { config } from "@/config/index.js"
 
 export default {
   name: "home",
-  created() {
-    console.log('this==>', this.$wx);
-    
-    getTicket();
-  }
+  methods: {}
 };
 </script>
